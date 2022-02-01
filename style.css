@@ -106,19 +106,6 @@ header {
 }
 
 
-
-
-/* .main-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 40px;
-
-} */
-
-
-
 .hijo {
     font-size: 27px;
     margin: 100px;
@@ -150,7 +137,7 @@ header {
     margin-left: 10px;
     margin-right: 10px;
 
-    
+
 }
 
 .quienes-text {
@@ -165,9 +152,13 @@ header {
     width: 450px;
 }
 
+
+
+
+
 /* FINNN */
 
-/* ---------------------------------------- */
+/* ----------------------------------------------- */
 
 
 /* PRODUCTOOOS */
@@ -254,6 +245,7 @@ header {
 .coleccion-titulo h1 {
     font-size: 30px;
 }
+
 .card {
     margin: 20px;
 }
@@ -274,7 +266,6 @@ header {
 
 
 .grid-question {
-    border-right: solid 1px rgb(170, 168, 168);
     border-bottom: solid 1px rgb(170, 168, 168);
 }
 
@@ -705,7 +696,9 @@ label {
     #border-text-index {
         border-right: solid 1px rgb(146, 145, 145);
         padding-right: 50px;
+        border-bottom: none;
     }
+
 
 
     /* FINNN */
@@ -728,6 +721,8 @@ label {
     .quienes-text {
         grid-area: texto;
         justify-self: start;
+        padding: 0;
+        font-size: 18px;
     }
 
 
@@ -735,6 +730,53 @@ label {
         grid-area: imagen;
         justify-self: end;
     }
+
+    /* Animacion */
+
+    #quienes-image-animation {
+        animation-name: quienesimage;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(.44, .53, .44, .89);
+    }
+
+    @keyframes quienesimage {
+        from {
+            transform: translate(-200px);
+            opacity: 0;
+
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1;
+
+        }
+
+    }
+
+    .quienes-text-animacion {
+        animation-name: quienes;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(.44, .53, .44, .89);
+    }
+
+    @keyframes quienes {
+        from {
+            transform: translate(+100px);
+            opacity: 0;
+
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1;
+
+        }
+
+    }
+
 
 
 
@@ -821,6 +863,49 @@ label {
         justify-content: center;
     }
 
+
+    /* Animacion */
+
+
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+
+    @-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
+
     /* FINNN */
 
     /* ---------------------------------- */
@@ -849,6 +934,7 @@ label {
 
     .grid-question {
         border-right: solid 1px rgb(170, 168, 168);
+        border-bottom: none;
     }
 
     .grid-desarollo {
@@ -881,6 +967,35 @@ label {
     h3 {
         font-size: 23px;
     }
+
+    /* Animacion */
+
+    .animacion-talles-text {
+        animation-name: talles;
+        animation-iteration-count: 1;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(.44, .53, .44, .89);
+    }
+
+    @keyframes talles {
+        from {
+            transform: translate(+100px);
+            opacity: 0;
+
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1;
+
+        }
+
+    }
+
+
+
+
+
 
 
 
@@ -979,6 +1094,54 @@ label {
         background: black;
         cursor: pointer;
     }
+
+
+    /* Animacion */
+
+    .scale-in-center {
+        -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+
+    @-webkit-keyframes scale-in-center {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes scale-in-center {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
     /* FINNNN */
 
