@@ -16,7 +16,7 @@
         "cuerpo"
         "pie";
 
-    grid-template-rows: 95px auto auto;
+    grid-template-rows: 110px auto auto;
 
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .flex-logo img {
-    width: 120px;
+    width: 110px;
     height: auto;
 }
 
@@ -63,7 +63,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 5px;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 header li,
@@ -97,7 +97,7 @@ header {
 
 /* INDEXX */
 
-.main-flex {
+.cuerpo-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +145,7 @@ header {
     justify-self: start;
     padding: 20px;
     font-size: 16px;
+    font-weight: 599;
 }
 
 .quienes-img img {
@@ -162,6 +163,26 @@ header {
 
 
 /* PRODUCTOOOS */
+
+/* grid para bootstrap */
+
+
+.columnas-bootstrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 100px;
+    justify-items: center;
+
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+/* fin */
 
 .product-list {
     padding: 1em;
@@ -240,11 +261,18 @@ header {
     display: flex;
     margin-bottom: 10px;
     justify-content: center;
+    margin: 20px;
+    padding: 10px;
 }
+
+/* Modificacion para Bootstrap */
 
 .coleccion-titulo h1 {
     font-size: 30px;
+    border-bottom: solid 1px black;
 }
+
+/* FIN */
 
 .card {
     margin: 20px;
@@ -411,8 +439,8 @@ footer {
 
 
 .container-footer-all {
-    width: 100%;
-    max-width: 1000px;
+    /* width: 100%;
+    max-width: 1000px; */
     margin: auto;
     padding: 30px;
 
@@ -440,24 +468,24 @@ label {
     color: #ecf0f1;
 }
 
-.row {
+.hilera {
     margin-top: 20px;
     display: flex;
 }
 
-.row img {
+.hilera img {
     width: 36px;
     height: 36px;
 }
 
-.row label {
+.hilera label {
     margin-top: 0px;
     color: #ecf0f1;
     font-size: 13px;
 
 }
 
-.row label a:hover {
+.hilera label a:hover {
     color: #e1b12c;
 
 }
@@ -661,6 +689,8 @@ label {
 
     /* INDEXX */
 
+    
+
     #padre {
         display: flex;
         align-items: center;
@@ -669,12 +699,12 @@ label {
     }
 
 
-    .main-flex {
-        display: flex;
+    .cuerpo-flex {
+        /* display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
-        margin: 40px;
+        justify-content: center; */
+        margin: 5px;
 
     }
 
@@ -787,6 +817,32 @@ label {
 
     /* PRODUCTOOOS */
 
+
+
+
+    /* Prueba producto bootstrap */
+
+    .columnas-bootstrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 60px;
+        grid-row-gap: 100px;
+        justify-items: center;
+        margin: 40px;
+    }
+
+    .card-title {
+        font-weight: 700;
+        font-size: 23px;
+    }
+
+
+    /* fin */
+
+
+
+    /* CODIGO EN DESUSO -- NO PRESTAR ATENCION */
+
     .product-list {
         padding: 4em;
         margin-bottom: 30px;
@@ -857,10 +913,17 @@ label {
         box-shadow: 0px 1px 0px #444e4e;
     }
 
+    /* Ajuste para bootstrap */
+
     .coleccion-titulo {
         display: flex;
         margin-bottom: 40px;
         justify-content: center;
+        margin: 50px;
+    }
+
+    .coleccion-titulo h1 {
+        font-size: 40px;
     }
 
 
@@ -902,6 +965,8 @@ label {
             opacity: 1;
         }
     }
+
+    /* TERMINO CODIGO EN DESUSO */
 
 
 
@@ -1188,23 +1253,23 @@ label {
         color: #ecf0f1;
     }
 
-    .row {
+    .hilera {
         margin-top: 20px;
         display: flex;
     }
 
-    .row img {
+    .hilera img {
         width: 36px;
         height: 36px;
     }
 
-    .row label {
+    .hilera label {
         margin-top: 0px;
         color: #ecf0f1;
 
     }
 
-    .row label a:hover {
+    .hilera label a:hover {
         color: #e1b12c;
 
     }
@@ -1266,15 +1331,11 @@ label {
     .fa-envelope {
         font-size: 20px;
     }
-
+    
     /* FINNNN */
-
-
-
-    /* --------------------------------------------------------------- */
-    /* MOBILE */
 
 
 
 
 }
+
